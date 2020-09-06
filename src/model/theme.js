@@ -9,10 +9,15 @@ class Theme {
   themes = []
 
   async getThemes() {
-    const names = `${Theme.locationA},${Theme.locationE},${Theme.locationF},${Theme.locationH}`
-    this.themes = await get('theme/by/names', {
-      names
-    })
+    try {
+      const names = `${Theme.locationA},${Theme.locationE},${Theme.locationF},${Theme.locationH}`
+      this.themes = await get('theme/by/names', {
+        names
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  
   }
 
   getHomeLocationA() {

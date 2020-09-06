@@ -1,7 +1,7 @@
 <template>
 <div class="main-price-container">
-  <span class="main-price">￥{{mainPrice.price}}</span>
-  <span class="slashed-price" v-if="slashedPrice.display">￥{{slashedPrice.price}}</span>
+  <span class="main-price"><span class="unit">￥</span>{{mainPrice.price}}</span>
+  <span class="slashed-price" v-if="slashedPrice.display"><span class="unit">￥</span>{{slashedPrice.price}}</span>
 </div>
 </template>
 
@@ -59,6 +59,10 @@ function useSlashedPrice(price, discountPrice) {
   flex-direction: row;
   align-items: baseline;
   font-weight: 500;
+}
+
+.unit {
+  font-size: 10px;
 }
 
 .main-price {

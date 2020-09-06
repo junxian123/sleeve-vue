@@ -10,6 +10,7 @@ module.exports = {
       '/': {
         target: 'http://se.7yue.pro/v1/',
         changeOrigin: true,
+        ws: true,
       }
     }
   }

@@ -6,7 +6,6 @@ const _axios = axios.create({
     appkey: config.appkey
   }
 })
-
 async function get (url, params = {}) {
   const res = await _axios({
     method: 'get',
