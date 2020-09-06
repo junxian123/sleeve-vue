@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="home-swiper-container">
   <van-swipe :autoplay="3000" indicator-color="#157658">
     <van-swipe-item class="swipe-item" v-for="item in bannerItems" :key="item.id">
       <img class="image" :src="item.img" alt="">

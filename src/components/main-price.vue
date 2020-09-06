@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="main-price-container">
   <span class="main-price">￥{{mainPrice.price}}</span>
   <span class="slashed-price" v-if="slashedPrice.display">￥{{slashedPrice.price}}</span>
 </div>
@@ -54,7 +54,7 @@ function useSlashedPrice(price, discountPrice) {
 </script>
 
 <style scoped>
-.container {
+.main-price-container {
   display: flex;
   flex-direction: row;
   align-items: baseline;

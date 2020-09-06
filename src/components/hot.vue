@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="hot-container">
   <img class="title-image" :src="banner.img" :alt="banner.description">
   <div class="inner-container">
     <img class="left" :src="left.img">
@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.hot-container {
   display: flex;
   flex-direction: column;
   background-color: #fff;

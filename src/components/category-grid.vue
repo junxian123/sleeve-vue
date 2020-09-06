@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="category-gird-container">
   <van-grid class="grid-container" :border="false" :column-num="3">
     <van-grid-item v-for="item in gridItems" :key="item.id">
       <div class="content">
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.category-gird-container {
   display: flex;
   align-items: center;
   padding: 4px;

@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="spu-scroll-container">
   <img class="top-image" :src="theme.title_img" :alt="theme.description">
   <scroll-view class="scroll" scroll-x :data="theme">
     <div class="spu-list">
@@ -31,12 +31,10 @@ export default {
     theme: Object
   },
   setup(props, context) {
-
     onMounted(() => {
       const length = props.theme.spu_list.length
       document.querySelector('.spu-list').style.width = useCalSpuListWidth(length) + 'px'
     })
-    return {}
   },
 }
 
@@ -50,7 +48,7 @@ function useCalSpuListWidth(length) {
 </script>
 
 <style scoped>
-.container {
+.spu-scroll-container {
   padding: 10px 14px 4px;
   background-color: #fff;
   margin: 6px 0;
